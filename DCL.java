@@ -32,7 +32,14 @@ class DoublyCL
         Last = null;
         iCount = 0;
     }
-
+/////////////////////////////////////////
+//
+// Function Name:  InsertFirst
+// Description:    Used to insert new element at first position
+// Author:         Anuja Balasaheb Thorat
+// Date:           16/04/2024
+/////////////////////////////////////////
+    
     public void InsertFirst(int No)
     {
         node newn = null;
@@ -56,7 +63,13 @@ class DoublyCL
 
         iCount++;
     }
-
+/////////////////////////////////////////
+//
+// Function Name:  InsertLast
+// Description:    Used to insert new element at last position
+// Author:         Anuja Balasaheb Thorat
+// Date:           16/04/2024
+/////////////////////////////////////////
     public void InsertLast(int No)
     {
         node newn = null;
@@ -81,7 +94,13 @@ class DoublyCL
 
         iCount++;
     }
-
+/////////////////////////////////////////
+//
+// Function Name:  Display
+// Description:    Used to Display all the elements of LinkedList
+// Author:         Anuja Balasaheb Thorat
+// Date:           16/04/2024
+/////////////////////////////////////////
     public void Display()
     {
         if(First == null && Last == null)
@@ -101,13 +120,29 @@ class DoublyCL
         }while(First != Last.next);
 
         System.out.println();
-    }
+    } 
+    
+/////////////////////////////////////////
+//
+// Function Name:  Count
+// Description:    Used to Count total no. of elements in LinkedList
+// Author:         Anuja Balasaheb Thorat
+// Date:           16/04/2024
+/////////////////////////////////////////
     
     public int Count()
     {
         return iCount;
     }
 
+/////////////////////////////////////////
+//
+// Function Name:  DeleteFirst
+// Description:    Used to Delete element at first position
+// Author:         Anuja Balasaheb Thorat
+// Date:           16/04/2024
+/////////////////////////////////////////
+    
     public void DeleteFirst()
     {
         if(First == null && Last == null)
@@ -129,6 +164,14 @@ class DoublyCL
         iCount--;
     }
 
+/////////////////////////////////////////
+//
+// Function Name: DeleteLast
+// Description:    Used to Delete element atlast position
+// Author:         Anuja Balasaheb Thorat
+// Date:           16/04/2024
+/////////////////////////////////////////
+    
     public void DeleteLast()
     {
         if(First == null && Last == null)
@@ -149,6 +192,14 @@ class DoublyCL
         }
         iCount--;
     }
+
+/////////////////////////////////////////
+//
+// Function Name:  InsertAtPos
+// Description:    Used to insert new element at given position
+// Author:         Anuja Balasaheb Thorat
+// Date:           16/04/2024
+/////////////////////////////////////////
     
     public void InsertAtPos(int No, int iPos)
     {
@@ -186,6 +237,14 @@ class DoublyCL
         }
     }
 
+/////////////////////////////////////////
+//
+// Function Name: DeleteAtPos
+// Description:    Used to Delete  element at given position
+// Author:         Anuja Balasaheb Thorat
+// Date:           16/04/2024
+/////////////////////////////////////////
+    
     public void DeleteAtPos(int iPos)
     {
         if(iPos < 1 || iPos > iCount)
